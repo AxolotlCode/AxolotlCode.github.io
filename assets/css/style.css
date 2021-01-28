@@ -2336,17 +2336,23 @@ p {
     -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
     -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
     box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); }
+    .navbar-area.sticky
     .navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
       background-color: #121212; }
     .navbar-area.sticky .navbar .navbar-nav .nav-item a {
       color: #121212;
       opacity: 0.7; }
+
+      .navbar-area.sticky .navbar .navbar-nav .nav-item a:hover {
+        color: #F23D6D;
+        opacity: 1; }
       .navbar-area.sticky .navbar .navbar-nav .nav-item a::before {
-        background: -webkit-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
-        background: -o-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
-        background: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, #121212 100%); }
-    .navbar-area.sticky .navbar .navbar-nav .nav-item.active, .navbar-area.sticky .navbar .navbar-nav .nav-item:hover {
-      color: #121212;
+        background: -webkit-linear-gradient(90deg, rgba(242,61,109,1) 5%, rgba(255,167,183,1) 73%);
+        background: -o-linear-gradient(90deg, rgba(242,61,109,1) 5%, rgba(255,167,183,1) 73%);
+        background: linear-gradient(90deg, rgba(242,61,109,1) 5%, rgba(255,167,183,1) 73%); }
+    .navbar-area.sticky .navbar .navbar-nav .nav-item.active a,
+    .navbar-area.sticky .navbar .navbar-nav .nav-item:hover {
+      color: #F23D6D;
       opacity: 1; }
     .navbar-area.sticky .navbar .navbar-btn li a.light {
       border-color: #F23D6D;
@@ -3245,3 +3251,9 @@ p.form-message.success, p.form-message.error {
     background-color: #F23D6D; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* logo brand */
+
+  .logo-brand {
+    width: 150px;
+  }
