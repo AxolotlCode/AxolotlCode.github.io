@@ -256,8 +256,8 @@
                             <img src="assets/images/basic.svg" alt="">
                         </div>
                         <div class="pricing-header text-center">
-                            <h5 class="sub-title">Pagina web simple</h5>
-                            <p class="month"><span class="price">Desde $ 12,000</span></p>
+                            <h5 class="sub-title">Pagina web</h5>
+                            <p class="month"><span class="price">Desde $ 8,500</span></p>
                         </div>
                         <div class="pricing-list">
                             <ul>
@@ -588,8 +588,6 @@
                 <div class="col-lg-12">
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Envianos <span> un mensaje.</span></h4>
-                        
-                        <form id="contact-form" action="assets/contact.php" method="post">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-input mt-25">
@@ -627,14 +625,18 @@
                                         </div>
                                     </div> <!-- form input -->
                                 </div>
-                                <p class="form-message"></p>
-                                <div class="col-md-12">
-                                    <div class="form-input light-rounded-buttons mt-30">
-                                        <button class="main-btn light-rounded-two">Enviar Mensaje</button>
+                                <div class="col-md-4">
+                                    <div class="form-input mt-25">
+                                        <div class="g-recaptcha" data-sitekey="6Ld2HkAaAAAAANiDpvY6-ISb6d_LhB2pZA2ckyI-"></div>
                                     </div> <!-- form input -->
                                 </div>
-                            </div> <!-- row -->
-                        </form>
+                                <p class="form-message"></p>
+                                <div class="col-md-6">
+                                    <div class="form-input light-rounded-buttons mt-30">
+                                        <button class="main-btn light-rounded-two" onclick="sendEmail()">Enviar Mensaje</button>
+                                    </div> <!-- form input -->
+                                </div>
+                            </div> <!-- row -->        
                     </div> <!-- contact wrapper form -->
                 </div>
             </div> <!-- row -->
@@ -673,6 +675,24 @@
 
     <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
 
+    <div class="toast notification" data-delay="1000" data-autohide="false">
+        <div id='notification' class="" role="alert">
+            <h5 id='texto1' class="alert-heading"></h5>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <p id='texto2' ></p>
+        </div>
+    </div>
+
+    <!--Captcha-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!--SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+
+    <!--Email-->
+    <script type="text/javascript"  src="assets/js/correo.js"></script>
 
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
