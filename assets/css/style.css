@@ -120,6 +120,18 @@ p {
   color: #6c6c6c;
   margin-top: 24px; }
 
+.notification {
+  position: fixed; 
+  z-index: 999; 
+  top: 9em; 
+  right: 20px; 
+  @media (min-width: 576px) {
+    max-width: 100%;
+  }
+  @media (max-width: 576px) { 
+    max-width: 40%;
+  }
+}
 /*===== All Preloader Style =====*/
 .preloader {
   /* Body Overlay */
@@ -1575,6 +1587,7 @@ p {
     .lg-btn {
       font-size: 16px;
       ine-height: 52px; } }
+    }
 
 .el-btn {
   line-height: 80px !important;
@@ -2704,6 +2717,7 @@ p {
 /*===========================
       16.PRICING css 
 ===========================*/
+
 .pricing-area {
   background-color: #f4f6f7;
   padding-top: 120px;
