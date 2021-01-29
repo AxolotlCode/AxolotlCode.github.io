@@ -584,8 +584,8 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- contact info -->
-            <div class="row">
-                <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12">
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Envianos <span> un mensaje.</span></h4>
                             <div class="row">
@@ -593,7 +593,7 @@
                                     <div class="form-input mt-25">
                                         <label>Nombre</label>
                                         <div class="input-items default">
-                                            <input name="name" type="text" placeholder="Nombre Completo">
+                                            <input id="name" type="text" placeholder="Nombre Completo" required>
                                             <i class="lni lni-user"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -602,7 +602,7 @@
                                     <div class="form-input mt-25">
                                         <label>Correo de contacto</label>
                                         <div class="input-items default">
-                                            <input type="email" name="email" placeholder="Correo electronico">
+                                            <input id="email" name="email" placeholder="Correo electronico" required>
                                             <i class="lni lni-envelope"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -611,7 +611,7 @@
                                     <div class="form-input mt-25">
                                         <label>Numero de contacto</label>
                                         <div class="input-items default">
-                                            <input type="phone" name="phone" placeholder="Numero de contacto">
+                                            <input type="tel" id="phone" placeholder="Numero de contacto" pattern="[1-9]{1}[0-9]{9}" required>
                                             <i class="lni lni-phone"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -620,7 +620,7 @@
                                     <div class="form-input mt-25">
                                         <label>Mensaje</label>
                                         <div class="input-items default">
-                                            <textarea name="massage" placeholder="Mensaje"></textarea>
+                                            <textarea id="massage" placeholder="Mensaje" required></textarea>
                                             <i class="lni lni-pencil-alt"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -644,8 +644,8 @@
                                 </div>
                             </div> <!-- row -->        
                     </div> <!-- contact wrapper form -->
+                    </div>
                 </div>
-            </div> <!-- row -->
         </div> <!-- container -->
     </section>
 
@@ -680,7 +680,7 @@
 
     <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
 
-    <div class="toast notification" data-delay="1000" data-autohide="false">
+    <div class="toast notification" data-delay="1000" data-autohide="false" style="text-align: center;">
         <div id='notification' class="" role="alert">
             <h5 id='texto1' class="alert-heading"></h5>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -690,11 +690,13 @@
         </div>
     </div>
 
+   
     <!--Captcha-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!--SMTP -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
     <!--Email-->
     <script type="text/javascript"  src="assets/js/correo.js"></script>
