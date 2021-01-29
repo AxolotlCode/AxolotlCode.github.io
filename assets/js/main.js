@@ -15,10 +15,10 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src", "assets/images/axolotlWhite.png");
+            $(".navbar-area img").attr("src", "assets/images/logo/axolotlWhite.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar-area img").attr("src", "assets/images/axolotlPink.png");
+            $(".navbar-area img").attr("src", "assets/images/logo/axolotlPink.png");
         }
     });
 
