@@ -2184,10 +2184,15 @@ p {
   .navbar-area .navbar {
     position: relative;
     padding: 0; }
+    .navbar-area .navbar .navbar-toggler {
+      background-color: #F23D6D;
+      height: 50px;
+    }
     .navbar-area .navbar .navbar-toggler .toggler-icon {
       width: 30px;
       height: 2px;
-      background-color: #fff;
+      background-color: #f4f6f7;
+      font-weight: 800;
       margin: 5px 0;
       display: block;
       position: relative;
@@ -3322,3 +3327,48 @@ p.form-message.success, p.form-message.error {
     margin-bottom: 10px;
   }
 }
+
+body {
+  overflow: overlay;
+}
+
+::-webkit-scrollbar-button {
+  height: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  transition: 1s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(242, 160, 182, 0.6);
+  border-radius: 10px;
+  transition: 1s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:active{
+  background: rgba(242, 160, 182, 1);
+  transition: 1s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(242, 160, 182, 1);
+  transition: 1s ease-in-out;
+}
+
+
+/* body::-webkit-scrollbar-thumb {
+  
+} */
+
+
+
+/* 
+
+::-webkit-scrollbar-thumb {
+  
+}
+ */
+
