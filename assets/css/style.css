@@ -15,7 +15,7 @@ body{
 .notification {
   position: fixed; 
   z-index: 999; 
-  top: 9em; 
+  top: 2em; 
   right: 20px; 
   @media (min-width: 576px) {
     max-width: 100%;

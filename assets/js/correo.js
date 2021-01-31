@@ -1,9 +1,11 @@
 function sendEmail()   {  
+    console.log('entro');
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const mensaje = document.getElementById("massage").value;
     if (name === '' || email === '' || phone === '' || mensaje === ''){
+        console.log('entro');
         const elemento = document.getElementById("notification");
         const title = document.getElementById("texto1");
         const menssage = document.getElementById("texto2");
