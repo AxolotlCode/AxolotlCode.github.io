@@ -1,9 +1,10 @@
 @font-face {
 	font-family: LineIcons;
-	src: url(https://axolotlcode.tech/assets/fonts/LineIcons.eot);
-	src: url(https://axolotlcode.tech/assets/fonts/LineIcons.eot) format('embedded-opentype'), url(https://axolotlcode.tech/assets/fonts/LineIcons.woff2) format('woff2'), url(https://axolotlcode.tech/assets/fonts/LineIcons.woff) format('woff'), url(https://axolotlcode.tech/assets/fonts/LineIcons.ttf) format('truetype'), url(https://axolotlcode.tech/assets/fonts/LineIcons.svg) format('svg');
+	/* src: url(https://axolotlcode.tech/assets/fonts/LineIcons.eot); */
+	src: url("../fonts/LineIcons.eot");
+	src: url("../fonts/LineIcons.eot") format('embedded-opentype'), url("../fonts/LineIcons.woff2") format('woff2'), url("../fonts/LineIcons.woff") format('woff'), url("../fonts/LineIcons.ttf") format('truetype'), url("../fonts/LineIcons.svg") format('svg');
 	font-weight: 400;
-	font-style: normal
+	font-style: normal;
 }
 
 .lni {
@@ -12,77 +13,77 @@
 	speak: none;
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .lni-arrow-right::before {
-	content: "\ea1e"
+	content: "\ea1e";
 }
 
 .lni-arrow-left::before {
-	content: "\ea22"
+	content: "\ea22";
 }
 
 .lni-chevron-up::before {
-	content: "\ea5e"
+	content: "\ea5e";
 }
 
 .lni-cloud-network::before {
-	content: "\ea66"
+	content: "\ea66";
 }
 
 .lni-envelope::before {
-	content: "\eaab"
+	content: "\eaab";
 }
 
 .lni-facebook-filled::before {
-	content: "\eab2"
+	content: "\eab2";
 }
 
 .lni-instagram-original::before {
-	content: "\eaf2"
+	content: "\eaf2";
 }
 
 .lni-instagram::before {
-	content: "\eaf3"
+	content: "\eaf3";
 }
 
 .lni-laptop-phone::before {
-	content: "\eb03"
+	content: "\eb03";
 }
 
 .lni-linkedin-original::before {
-	content: "\eb14"
+	content: "\eb14";
 }
 
 .lni-map-marker::before {
-	content: "\eb1c"
+	content: "\eb1c";
 }
 
 .lni-pencil-alt::before {
-	content: "\eb45"
+	content: "\eb45";
 }
 
 .lni-phone::before {
-	content: "\eb48"
+	content: "\eb48";
 }
 
 .lni-quotation::before {
-	content: "\eb69"
+	content: "\eb69";
 }
 
 .lni-star-filled::before {
-	content: "\eba3"
+	content: "\eba3";
 }
 
 .lni-twitter-original::before {
-	content: "\ebd6"
+	content: "\ebd6";
 }
 
 .lni-user::before {
-	content: "\ebdd"
+	content: "\ebdd";
 }
 
 .lni-wechat::before {
-	content: "\ebeb"
+	content: "\ebeb";
 }
