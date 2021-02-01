@@ -2,13 +2,6 @@ $(function() {
     
     "use strict";
     
-    //===== Prealoder
-    
-    $(window).on('load', function(event) {
-        $('.preloader').delay(500).fadeOut(500);
-    });
-    
-    
     //===== Sticky
 
     $(window).on('scroll', function (event) {
@@ -66,8 +59,6 @@ $(function() {
     $('[href="#close"], .overlay-left').on('click', function (event) {
         $('.sidebar-left, .overlay-left').removeClass('open');
     });
-    
-
     
     //===== Back to top
     
